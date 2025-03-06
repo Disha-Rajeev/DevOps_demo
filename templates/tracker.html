@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Expense Tracker</h2>
+  {% if expenses %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Category</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for expense in expenses %}
+        <tr>
+          <td>{{ expense.amount }}</td>
+          <td>{{ expense.category }}</td>
+          <td>{{ expense.description }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No expenses recorded yet.</p>
+  {% endif %}
+{% endblock %}
