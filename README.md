@@ -17,7 +17,8 @@ This project is a great portfolio builder.
    pip install flask
 
 2. **Run the Flask App:** 
-From the project root directory, run:
+   From the project root directory, run:
+   ```bash
    python app.py
 
 The application will start in debug mode at http://127.0.0.1:5000/.
