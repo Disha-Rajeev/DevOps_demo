@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-  <h2>Welcome to the Expense Tracker</h2>
-  <p>Use the navigation bar to add or track your expenses.</p>
+  <h2>Home</h2>
+  <p>Total Expense Spent: ${{ total_expense }}</p>
+  <p>
+    <a href="{{ url_for('add') }}" class="btn btn-primary">Add Expense</a>
+    <a href="{{ url_for('tracker') }}" class="btn btn-info">View Tracker</a>
+  </p>
 {% endblock %}

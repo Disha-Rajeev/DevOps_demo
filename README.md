@@ -31,6 +31,7 @@ DevOps_Demo/
    Ensure you have Python installed. Then, install Flask:
    ```bash
    pip install flask
+   pip install flask flask_sqlalchemy
 
 2. **Run the Flask App:** 
    From the project root directory, run:
@@ -44,7 +45,7 @@ The application will start in debug mode at http://127.0.0.1:5000/.
 Home Page: http://127.0.0.1:5000/
 Add Expense: http://127.0.0.1:5000/add
 Expense Tracker: http://127.0.0.1:5000/tracker
-
+Update Expense Page: Accessible via the Update button on the Tracker page.
 
 ---
 
