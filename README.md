@@ -9,6 +9,22 @@ What I am looking forward to achieve-
 
 This project is a great portfolio builder.
 
+# Expense Tracker - Flask Project
+
+This is a simple Expense Tracker web application built with Flask. The project demonstrates basic CRUD operations (Create, Read, Update, Delete) along with a modular template structure using Flask's template inheritance. It is designed as a learning project to practice web development and DevOps concepts.
+
+## Project Structure
+
+DevOps_Demo/ 
+   │ 
+   ├── app.py 
+   ├── README.md 
+   └── templates/ 
+         ├── base.html # Common base template that includes the navbar and Bootstrap setup. 
+         ├── home.html # Home page template with a welcome message. 
+         ├── tracker.html # Tracker page template that displays a table of all recorded expenses. 
+         └── add.html # Template for adding a new expense via a form. 
+
 ## Running the Project
 
 1. **Install Dependencies:**
