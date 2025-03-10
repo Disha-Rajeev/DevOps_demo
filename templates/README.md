@@ -28,6 +28,11 @@
   - Contains a form with fields for **Amount**, **Category**, and **Description**.
   - Submits form data via POST to the `/add` route.
 
-
+### `update.html`
+- **Purpose:** Allows users to update an existing expense.
+- **Features:**
+  - Extends `base.html`.
+  - Displays a pre-populated form with the current expense details.
+  - Submits updates via POST to the `/update/<index>` route.
 
 
