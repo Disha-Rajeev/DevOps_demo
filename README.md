@@ -9,7 +9,6 @@ What I am looking forward to achieve-.\
 
 This project is a great portfolio builder.
 
-<<<<<<< HEAD
 ########################################################################
 # Expense Tracker Web App
 
