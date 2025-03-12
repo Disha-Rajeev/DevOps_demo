@@ -13,40 +13,159 @@ This project is a great portfolio builder.
 
 This is a simple Expense Tracker web application built with Flask. The project demonstrates basic CRUD operations (Create, Read, Update, Delete) along with a modular template structure using Flask's template inheritance. It is designed as a learning project to practice web development and DevOps concepts.
 
-## Project Structure
+# Expense Tracker Web App
 
-DevOps_Demo/ 
-   │ 
-   ├── app.py 
-   ├── README.md 
-   └── templates/ 
-         ├── base.html # Common base template that includes the navbar and Bootstrap setup. 
-         ├── home.html # Home page template with a welcome message. 
-         ├── tracker.html # Tracker page template that displays a table of all recorded expenses. 
-         └── add.html # Template for adding a new expense via a form. 
+This is a simple Expense Tracker web application built using **Flask** with SQLite as the database. It allows users to manage their expenses with features like adding, updating, and deleting expenses. The app also calculates the total expense and provides the option to download expenses in PDF format.
 
-## Running the Project
+## Features
 
-1. **Install Dependencies:**
-   Ensure you have Python installed. Then, install Flask:
-   ```bash
-   pip install flask
-   pip install flask flask_sqlalchemy
-
-2. **Run the Flask App:** 
-   From the project root directory, run:
-   ```bash
-   python app.py
-
-The application will start in debug mode at http://127.0.0.1:5000/.
-
-## Navigate the App:
-
-Home Page: http://127.0.0.1:5000/
-Add Expense: http://127.0.0.1:5000/add
-Expense Tracker: http://127.0.0.1:5000/tracker
-Update Expense Page: Accessible via the Update button on the Tracker page.
+✅ Add new expenses with details like amount, category, and description.\
+✅ View total expenses on the home page.\
+✅ Update or delete existing expenses.\
+✅ Uses SQLite for efficient data management.\
+✅ Dockerized for easy deployment and scalability.\
+✅ CI/CD integration for automated testing and deployment.
 
 ---
 
-This **README** provides clear documentation about templates, project structure, usage instructions, and potential next steps. Adjust or expand the content as needed for specific project details or additional features you implement.
+## Project Structure
+
+```
+/DevOps_demo
+ ├── /templates
+ │   ├── home.html
+ │   ├── add.html
+ │   ├── tracker.html
+ ├── app.py
+ ├── requirements.txt
+ ├── Dockerfile
+ ├── .github/workflows
+ │   ├── ci-cd.yaml
+ ├── tests
+ │   ├── test_app.py
+ ├── README.md
+```
+
+---
+
+## Prerequisites
+
+Before running this project, ensure you have the following installed:
+
+- **Python 3.9 or above**
+- **Flask**
+- **SQLite**
+- **Docker**
+
+---
+
+## Installation
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/Disha-Rajeev/DevOps_demo.git
+cd DevOps_demo
+```
+
+2. **Create a Virtual Environment**
+
+```bash
+python -m venv env
+source env/bin/activate     # On Mac/Linux
+env\Scripts\activate        # On Windows
+```
+
+3. **Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Run the Flask App**
+
+```bash
+python app.py
+```
+
+The database file expenses.db will be generated inside the instance/ folder.
+
+
+
+5. **Access the Application**
+   Open your browser and visit:\
+   **[http://localhost:5000](http://localhost:5000)**
+
+---
+
+## Docker Setup
+
+1. **Build the Docker Image**
+
+```bash
+docker build -t expense-tracker .
+```
+
+2. **Run the Container**
+
+```bash
+docker run -d -p 5000:5000 expense-tracker
+```
+
+---
+
+## Running Tests
+
+1. Install **pytest** if not already installed:
+
+```bash
+pip install pytest
+```
+
+2. Run the tests:
+
+```bash
+pytest
+```
+
+---
+
+## CI/CD Pipeline
+
+This project includes a GitHub Actions CI/CD pipeline:
+
+- Runs tests using `pytest`.
+- Builds the Docker image.
+- Deploys the application to a specified environment (if configured).
+
+Workflow file path: `.github/workflows/ci-cd.yaml`
+
+---
+
+## Future Enhancements
+
+🔹 Implement user authentication.\
+🔹 Add filtering and sorting features for better expense management.\
+🔹 Improve UI with enhanced Bootstrap styling.
+🔹 Kubernetes deployment
+🔹 AWS infrastructure provisioning using Terraform
+🔹 
+
+---
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve the project, please fork the repository and create a pull request.
+
+---
+
+## Author
+
+**Disha Rajeev**
+
+---
+
+## License
+
+This project is licensed under the GNU General Public License v3. See the [LICENSE]\(LICENSE) file for details.
+
