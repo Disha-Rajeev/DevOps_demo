@@ -9,6 +9,7 @@ What I am looking forward to achieve-.\
 
 This project is a great portfolio builder.
 
+<<<<<<< HEAD
 ########################################################################
 # Expense Tracker Web App
 
@@ -16,6 +17,16 @@ This is a simple Expense Tracker web application built using **Flask** with SQLi
 
 ## Features
 
+=======
+##########################################################################################################
+
+# Expense Tracker Web App
+
+This is a simple Expense Tracker web application built using **Flask** with SQLite as the database. It allows users to manage their expenses with features like adding, updating, and deleting expenses. The app also calculates the total expense.
+
+## Features
+
+>>>>>>> 17c475a (modified README file)
 ✅ Add new expenses with details like amount, category, and description.\
 ✅ View total expenses on the home page.\
 ✅ Update or delete existing expenses.\
