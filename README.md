@@ -1,11 +1,19 @@
 # DevOps_demo
 This is my first project where I am testing out the DevOps knowledge I gained from past few months.
+<<<<<<< HEAD
 What I am looking forward to achieve-
+=======
+What I am looking forward to achieve-.\
+>>>>>>> V1.1
       ✅ End-to-end DevOps pipeline from development to deployment.\
       ✅ CI/CD automation with GitHub Actions/Jenkins.\
       ✅ Containerization & orchestration with Docker & Kubernetes.\
       ✅ AWS infrastructure provisioning using Terraform.\
+<<<<<<< HEAD
       ✅ Monitoring & logging for application health tracking.\
+=======
+      ✅ Monitoring & logging for application health tracking.
+>>>>>>> V1.1
 
 This project is a great portfolio builder.
 
@@ -16,6 +24,9 @@ This is a simple Expense Tracker web application built using **Flask** with SQLi
 
 ## Features
 
+=======
+
+>>>>>>> 17c475a (modified README file)
 ✅ Add new expenses with details like amount, category, and description.\
 ✅ View total expenses on the home page.\
 ✅ Update or delete existing expenses.\
