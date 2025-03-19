@@ -16,9 +16,6 @@ This is a simple Expense Tracker web application built using **Flask** with SQLi
 
 ## Features
 
-=======
-
->>>>>>> 17c475a (modified README file)
 ✅ Add new expenses with details like amount, category, and description.\
 ✅ View total expenses on the home page.\
 ✅ Update or delete existing expenses.\
